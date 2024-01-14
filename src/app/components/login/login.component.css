@@ -1,0 +1,16 @@
+.example-card {
+  width: 800px;
+  height: 750px;
+  margin: auto;
+  margin-top: 60px;
+}
+.title{
+  text-align: center;
+  margin-top: 50px;
+  font-size: xx-large;
+  color: rgb(1, 1, 110);;
+}
+.terms{
+  text-align: center;
+  margin-top: 40px;
+}

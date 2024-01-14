@@ -1,0 +1,13 @@
+.design{
+  height: 800px;
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 200px;
+  background-color:rgb(255, 255, 255)
+
+}
+.data{
+  margin: 30px 0 0 30px;
+  font-size: xx-large;
+  color: rgb(5, 5, 58);
+}

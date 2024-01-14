@@ -1,0 +1,31 @@
+<form #loginForm="ngForm" style="margin: 50px 50px 50px 50px ;"(ngSubmit)="submit(loginForm)" >
+    <h2 class="title">Create a New Account ^_^ </h2>
+    <div class="row">
+      <h3 style="color: rgb(1, 1, 110);">Full Name</h3>
+      <mat-form-field>
+        <input matInput ngModel name="fullName" class="form-control" placeholder=" Enter your Full Name" required>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <h3 style="color: rgb(1, 1, 110);">Phone Number</h3>
+      <mat-form-field>
+        <mat-label>Phone number</mat-label>
+        <input matInput ngModel name="phoneNumber" class="form-control" type="number" maxlength="10" required>
+        <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <h3 style="color: rgb(1, 1, 110);">Email Address</h3>
+      <mat-form-field>
+        <input matInput ngModel name="email" class="form-control" placeholder="pat@example.com" required>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <h3 style="color: rgb(1, 1, 110);">Password</h3>
+      <mat-form-field>
+        <input matInput ngModel name="Password" class="form-control" placeholder="password" [type]="hide ? 'password' : 'text'" required="">
+      </mat-form-field>
+      <button mat-raised-button color="primary" [disabled]="loginForm.invalid"
+        style="width: 150px; height: 40px; margin: auto;">{{status}}</button>
+    </div>
+</form>

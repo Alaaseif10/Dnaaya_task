@@ -1,0 +1,32 @@
+<div>
+<form [formGroup]="userform"  style="margin: 50px 50px 50px 50px ;"(ngSubmit)="onsumbit()" >
+  <h2 class="title">User Data ^_^ </h2>
+  <div class="row">
+    <h3 style="color: rgb(1, 1, 110);">Full Name</h3>
+    <mat-form-field>
+      <input matInput  type="text" placeholder=" Enter your Full Name" formControlName="name">
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <h3 style="color: rgb(1, 1, 110);">Phone Number</h3>
+    <mat-form-field>
+      <mat-label>Phone number</mat-label>
+      <input matInput  type="number" maxlength="10" formControlName="phone">
+      <mat-icon matSuffix>phone</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <h3 style="color: rgb(1, 1, 110);">Email Address</h3>
+    <mat-form-field>
+      <input matInput  type="email" placeholder="pat@example.com" formControlName="mail">
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <h3 style="color: rgb(1, 1, 110);">Password</h3>
+    <mat-form-field>
+      <input matInput  type="password"  placeholder="password" [type]="hide ? 'password' : 'text'" formControlName="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" style="width: 150px; height: 40px; margin: auto;">{{data? 'update':'save'}}</button>
+  </div>
+</form>
+</div>

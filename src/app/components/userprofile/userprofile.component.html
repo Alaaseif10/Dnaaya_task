@@ -1,0 +1,15 @@
+
+<mat-card class="design" >
+  <mat-card-header>
+    <mat-card-title style="font-size: xx-large;">{{name}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="./../../../assets/images/profileImage.jpg" alt="profile photo" width="400px" height="400px">
+  <mat-card-content>
+    <p class="data"><b> Email :</b> {{email}}</p>
+    <p class="data"><b> PhoneNumber :</b> {{phone}}</p>
+  </mat-card-content>
+  <div style=" margin-top: 50px; text-align: center;" >
+    <button mat-raised-button color="primary" style="width: 150px; height:50px;" (click)="back()">back</button>
+  </div>
+  </mat-card>
+

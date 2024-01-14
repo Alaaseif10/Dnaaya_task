@@ -1,0 +1,29 @@
+
+<mat-card class="example-card">
+  <mat-card-content>
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="Sign In">
+        <form #loginForm="ngForm" style="margin: 50px 50px 50px 50px ;"(ngSubmit)="signIn(loginForm.value)" >
+          <div class="row" style=" margin-top: 60px;">
+            <h2 style="color: rgb(1, 1, 110);">Email Address</h2>
+            <mat-form-field>
+              <input matInput ngModel name="email"  placeholder="pat@example.com" required>
+            </mat-form-field>
+          </div>
+          <div class="row" >
+            <h2 style="color: rgb(1, 1, 110);">Password</h2>
+            <mat-form-field>
+              <input matInput ngModel name="password" placeholder="password" [type]="hide ? 'password' : 'text'">
+            </mat-form-field>
+            <p style="text-align: center; color: red;">{{error}}</p>
+            <p class="terms">By clicking "Sign in," you agree to our Terms of Use and our Privacy Policy.</p>
+            <button mat-raised-button color="primary"  type="submit" style="width: 150px; height: 40px; margin: auto; margin-top: 20PX;">Sign In</button>
+          </div>
+        </form>
+      </mat-tab>
+      <mat-tab label="Sign Up">
+        <app-signup></app-signup>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
